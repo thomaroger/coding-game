@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Coding Game #1 - 17 Avril 2013</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                <section>
+                    <h1>Coding Game #1</h1>
+                    <p>17 Avril 2013</p>
+                </section>
+
+                <section>
+                    <h1>C'est quoi ?</h1>
+                    <ul>
+                        <li>Atelier de code</li>
+                        <li>Résoudre un problème donné</li>
+                        <li>Scolaire ?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Présentation du codingGame</h2>
+                    <p> Calcul de recette d'un manège pour une journée </p>
+                    <ul> en fonction de
+                        <li>Nombre de places</li>
+                        <li>Nombre de tours</li>
+                        <li>Nombre de personnes réparties par groupe non dissociable</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Divers sous problème</h2>
+                    <ol>
+                        <li>Cas simple</li>
+                        <li>2 places, 1 tour, 1 groupe</li>
+                        <li>Les memes groupes passent plusieurs fois dans la journée</li>
+                        <li>100 groupes de quelques personnes</li>
+                        <li>Toutes les personnes rentrent dans le manège en 1 fois</li>
+                        <li>Touses les personnes ne passent pas </li>
+                        <li>Séquence de groupe de personnes</li>
+                        <li>Gros gains dans la journée</li>
+                        <li>Fonctionne avec une large jeu de données</li>
+                        <li>Augmentation du prix d'un tour de manège</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Conditions de réalisation</h2>
+                    <ul>
+                        <li>90 minutes</li>
+                        <li>temps d'éxécution inférieur à 6 secondes</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Particpants</h2>
+                    <ol>
+                        <li>Romain C</li>
+                        <li>Guillaume L</li>
+                        <li>Ahmed H</li>
+                        <li>Richard N</li>
+                        <li>Thomas R</li>
+                    </ol>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+                <section>
+                    <h1>Questions ?</h1>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+
+
+        <script type="text/javascript">
+        /* <![CDATA[ */
+            (function() {
+                var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+                t.parentNode.insertBefore(s, t);
+            })();
+        /* ]]> */
+        </script>
+
+        <script>
+            if( !navigator.userAgent.match( /iphone|ipod|android|ipad|blackberry/gi ) && !!document.querySelector ) {
+                document.querySelector( '.share-reveal' ).style.display = 'block';
+                document.querySelector( '.fork-reveal' ).style.display = 'block';
+            }
+        </script>
+
+    </body>
+</html>
